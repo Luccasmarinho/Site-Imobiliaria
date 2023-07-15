@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100%vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.blue {
+    color: #1D80C1;
+    font-weight: bold;
+}
+
+.yellow {
+    color: #EBFA63;
+    font-weight: bold;
+}
+
+.backgroundblue {
+    background-color: #1D80C1;
+}
+
+.header {
+    background: linear-gradient(to top, #B0DDFC, #b0defc79);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #17679c;
+    box-shadow: 3px 1px 5px black;
+    z-index: 1;
+}
+
+.header img {
+    width: 100px;
+    
+    
+}
+
+.header .navegation {
+    display: flex;
+    gap: 20px;
+}
+
+.header .navegation a {
+    text-decoration: none;
+    color: #17679c;
+    font-weight: 600;
+    transition: .3s;
+    height: 20px;
+
+}
+
+.navegation a:hover {
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.banner {
+    background-image: url('imagens/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  
+
+}
+
+
+.imovel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.imovel h2 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imovel h3 {
+    font-weight: normal;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.imovel img {
+    width: 480px;   
+    box-shadow: 4px 4px 8px black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.imovel p {
+    text-align: justify;
+    width: 90%;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0px;
+    height: 540px;
+}
+
+.servicos h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.servicos p {
+    width: 600px;
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 30px;
+    line-height: 35px;
+
+}
+
+.servicos ul li {
+    color: white;
+    line-height: 40px;
+    font-size: 1.3rem;
+}
+
+.corretores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0;
+}
+
+.corretores h2 {
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+
+}
+.corretores img {
+    width: 480px;
+    margin-bottom: 25px;
+    box-shadow: 4px 4px 8px black;
+    border-radius: 5px;
+}
+
+.corretores p {
+    width: 80%;
+    font-size: 1.0rem;
+    line-height: 25px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+   
+
+}
+
+.contatos h2 {
+    color: white;
+    font-size: 2.2rem;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.contatos iframe {
+    width: 800px;
+    height: 320px;
+    margin-bottom: 35px;
+    box-shadow: 4px 4px 8px black;
+    border-radius: 5px;
+}
+
+.contatos p {
+    color: white;
+    background-color: #1D1D1D;
+    padding: 15px 12px;
+    margin-bottom: 35px;
+    box-shadow: 4px 4px 8px black;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contatos span {
+    color: #EBFA63;
+    font-size: 1.1rem;
+}
+
+
+
+.contatos a {
+    color: white;
+    padding: 8px;
+    border: 1px solid white;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .4s;
+    font-weight: 500;
+}
+
+.contatos a:hover {
+    background-color: white;
+    color: #1D80C1;
+}
+
+#criador {
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .banner {
+        height: 360px;
+    }
+    .corretores p {
+        width: 90%;
+    }
+
+    .contatos iframe {
+        width: 90%
+    }
+
+    .contatos p {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        flex-direction: column;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 525px) {
+    .banner {
+        height: 200px;
+    }
+
+    .header {
+        padding: 12px;
+        font-size: 0.9rem;
+        
+    }
+    
+
+    .imovel img {
+        width: 90%
+    }
+
+    .imovel h2 {
+        font-size: 1.4rem;
+        width: 70%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .imovel h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .servicos {
+        height: 740px;
+    }
+
+    .servicos h2 {
+        font-size: 1.4rem;
+        width: 70%;
+        text-align: center;
+    }
+
+    .servicos p {
+        width: 90%;
+    }
+
+    .corretores img {
+        width: 90%
+    }
+}
